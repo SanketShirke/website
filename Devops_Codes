@@ -4,3 +4,6 @@ git remote -v
 git status
 git log
 
+git push
+git pull
+git fetch
