@@ -1,0 +1,191 @@
+   1  whoami
+    2  clear
+    3  sudo apt-get update
+    4  sudo apt install docker.io
+    5  systemctl status docker
+    6  pwd
+    7  mkdir docker-projects
+    8  ls -ltr
+    9  cd docker-projects/
+   10  ls -ltr
+   11  sudo reboot
+   12  systemctl status docker
+   13  docker images
+   14  usermod -aG docker $USER
+   15  sudo usermod -aG docker $USER
+   16  docker images
+   17  docker ps 
+   18  cat /etc/users
+   19  cat /etc/user
+   20  cat /etc/group
+   21  sudo usermod -aG docker $USER
+   22  cat /etc/group
+   23  sudo docker ps 
+   24  docker ps 
+   25  sudo images
+   26  sudo docker image
+   27  docker pull mysql:latest
+   28  sudo docker mysql:latest
+   29  sudo docker pull  mysql:latest
+   30  sudo docker image
+   31  sudo docker images
+   32  sudo docker run mysql:latest
+   33  sudo docker -e MYSQL_ROOT_PASSWORD=test@123 mysql:latest
+   34  sudo docker -d  -e MYSQL_ROOT_PASSWORD=test@123 mysql:latest
+   35  sudo docker run -d  -e MYSQL_ROOT_PASSWORD=test@123 mysql:latest
+   36  sudo docker ps 
+   37  sudo docker images
+   38  docker exec -it 0d8d0f6d65fc sh
+   39  sudo docker exec -it 0d8d0f6d65fc sh
+   40  sudo docker ps 
+   41  sudo docker kill 0d8d0f6d65fc
+   42  sudo docker ps 
+   43  sudo docker ps -a
+   44  sudo docker ps 
+   45  sudo docker images
+   46  sudo image rm 99afc808f15b
+   47  sudo docker image rm 99afc808f15b
+   48  sudo docker rm d4acf38fdc01
+   49  sudo docker image rm 99afc808f15b
+   50  pwd
+   51  ls -ltr
+   52  mkdir javaapp
+   53  cd javaapp/
+   54  vi Hello.java
+   55  vi Dockerfile
+   56  ls -lre
+   57  ls -ltr
+   58  vi Hello.java 
+   59  sudo docker build . -t java-app
+   60  ls -ltr
+   61  vi Dockerfile 
+   62  sudo docker build . -t java-app
+   63  ls -ltr
+   64  vi Dockerfile 
+   65  sudo docker build . -t java-app:latest
+   66  vi Hello.java 
+   67  ls -ltr
+   68  vi Hello.java 
+   69  vi Dockerfile 
+   70  sudo docker build . -t java-app:latest
+   71  ls -ltr
+   72  sudo java --version
+   73  sudo apt install default-jre
+   74  sudp java -version
+   75  java -version
+   76  java - version
+   77  sudo java --version
+   78  sudo docker build . -t java-app
+   79  ks -ltr
+   80  ls -ltr
+   81  vi 
+   82  ls -ltr
+   83  vi Dockerfile 
+   84  ls -ltr
+   85  vi Hello.java 
+   86  sudo docker build . -t java-app
+   87  ls -ltr
+   88  rm Dockerfile 
+   89  ls -ltr
+   90  vi Dockerfile
+   91  sudo docker build . -t java-app
+   92  sudo docker images
+   93  sudo docker run -d 764a04af3eff
+   94  docker run ps 
+   95  sudo docker ps 
+   96  sudo docker images
+   97  sudo docker run java-app
+   98  docker ps 
+   99  sudo docker ps 
+  100  sudo docker build . -t java-app:2
+  101  sudo docker images
+  102  sudo run java-app:2
+  103  sudo docker run java-app:2
+  104  sudo docker ps 
+  105  sudo docker ps -a
+  106  sudo docker ps 
+  107  history
+  108  cd ..
+  109  mkdir flask-app
+  110  cd flask-app/
+  111  ls -ltr
+  112  vi Hello.py
+  113  ls -ltr
+  114  vi Dockerfile
+  115  ls -ltr
+  116  cat Dockerfile 
+  117  sudo docker build . -t flask-app
+  118  sudo docker images
+  119  sudo docker -d -p 5000:5000 flask-app:latest
+  120  sudo docker run -d -p 5000:5000 flask-app:latest
+  121  sudo docker ps 
+  122  docker ps -a
+  123  sudo docker ps -a
+  124  sudo docker run -d -p 5000:5000 flask-app:latest
+  125  sudo docker ps 
+  126  df -h
+  127  sudo docker run -d -p 5000:5000 flask-app:latest
+  128  sudo docker ps 
+  129  sudo docker images
+  130  ls -ltr
+  131  vi Hello.py 
+  132  sudo docker build . -t flask-app:2
+  133  sudo docker images
+  134  sudo docker run -d -p 5000:5000 flask-app:2
+  135  sudo docker ps 
+  136  ls -ltr
+  137  vi Dockerfile 
+  138  ls -ltr
+  139  vi Hello.py 
+  140  ls -ltr
+  141  cat Dockerfile 
+  142  ls -ltr
+  143  rm Hello.py 
+  144  ls -ltr
+  145  vi app.py
+  146  df -h
+  147  sudo docker rmi -f $(sudo docker images -a -q)
+  148  sudo docker rm -vf $(docker ps -aq)
+  149  docker rm -vf $(docker ps -aq)
+  150  df -h
+  151  sudo docker images
+  152  ls -ltr
+  153  sudo docker build . -t flask-app:2
+  154  sudo docker images
+  155  sudo docker run -d -p 5000:5000 flask-app:2
+  156  sudo docker ps 
+  157  ls -ltr
+  158  cd ..
+  159  ls -ltr
+  160  mkdir node-app
+  161  cd node-app/
+  162  ls -ltr
+  163  cd ..
+  164  ls -ltr
+  165  cd docker-projects/
+  166  ls -ltr
+  167  git clone https://github.com/SanketShirke/DockerProjects.git
+  168  ls -ltr
+  169  cd DockerProjects/
+  170  ls -ltr
+  171  cd node-app/
+  172  ls -ltr
+  173  rm Dockerfile 
+  174  ls -ltr
+  175  vi Dockerfile
+  176  ls -ltr
+  177  sudo docker build . -t node-application
+  178  ls -ltr
+  179  sudo docker build . -t node-app
+  180  ls -ltr
+  181  cat Dockerfile 
+  182  vi Dockerfile 
+  183  sudo docker build . -t node-app
+  184  sudo docker images
+  185  sudo docker run -d -p 8000:8000 node-app:latest
+  186  sudo docker ps 
+  187  sudo docker images
+  188  sudo docker ps 
+  189  sudo docker kill 37b2e5e70492
+  190  sudo docker run -d -p 8000:8000 node-app:latest
+  191  history
